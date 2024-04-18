@@ -3,10 +3,12 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [opacity, setOpacity] = useState(1);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsSticky(window.pageYOffset > 0);
+      setOpacity(1 - window.pageYOffset / 600); // Adjust 200 based on how quickly you want the opacity to decrease
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -17,7 +19,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`navbar ${isSticky ? 'sticky' : ''}`}>
+    <div
+      className={`navbar ${isSticky ? 'sticky' : ''}`}
+      style={{ opacity: opacity }}>
       <div className="w-full px-4 py-8 bg-gray-50 flex justify-end">
         <div className="links flex gap-10 items-center">
           {['Service', 'Team', 'Portfolio', 'About us', 'Connect Now'].map(
