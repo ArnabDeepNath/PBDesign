@@ -1,0 +1,16 @@
+.links a:hover span {
+  transform: scaleX(0.8);
+  opacity: 100;
+}
+
+.navbar {
+  transition: top 0.3s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.5;
+}
