@@ -10,7 +10,7 @@ import Footer from './sections/Footer';
 
 export default function App() {
   return (
-    <div className="w-full h-full bg-zinc-900">
+    <div className="w-full h-full">
       <Navbar />
       <HeroSection />
       <ScrollingHeader />

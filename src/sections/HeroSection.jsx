@@ -5,13 +5,13 @@ const HeroSection = () => {
     <div className="w-full h-screen bg-white p-1">
       <div className="textstructure mt-40 text-start px-12">
         <div className="masker">
-          <h1 className="uppercase text-9xl tracking-tighter font-bold leading-[4.5vw] xl:leading-[5.5vw] ">
+          <h1 className="uppercase text-9xl tracking-tighter font-bold leading-[12vw] xl:leading-[5.5vw] ">
             Designs
           </h1>
-          <h1 className="uppercase text-9xl tracking-tighter font-bold leading-[4.5vw] xl:leading-[5.5vw] ">
+          <h1 className="uppercase text-9xl tracking-tighter font-bold leading-[12vw] xl:leading-[5.5vw] ">
             Flow
           </h1>
-          <h1 className="uppercase text-9xl tracking-tighter font-bold leading-[4.5vw] xl:leading-[5.5vw] ">
+          <h1 className="uppercase text-9xl tracking-tighter font-bold leading-[12vw] xl:leading-[5.5vw] ">
             Art
           </h1>
         </div>
