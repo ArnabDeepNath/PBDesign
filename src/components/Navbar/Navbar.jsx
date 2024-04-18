@@ -30,7 +30,7 @@ const Navbar = () => {
                 key={index}
                 className={`capitalize text-lg font-light font-[lato] cursor-pointer  ${
                   index === 4 &&
-                  'ml-32 border-solid border-2 border-zinc-400 rounded-3xl px-8 py-2'
+                  'ml-32 border-solid border-2 border-zinc-400 rounded-3xl px-8 py-2 hover:text-white hover:bg-zinc-800'
                 }`}
                 style={{ position: 'relative' }}>
                 <h1>{item}</h1>
